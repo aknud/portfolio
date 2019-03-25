@@ -10,11 +10,11 @@
 <body>
     <nav>
         <div class="drop-down">
-            <a class="nav-home" href="#">Amy Knudson</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <li class="go-to nav-home" href="#">Home</li>
+            <li class="go-to nav-skills" href="#">Skills</li>
+            <li class="go-to nav-projects" href="#">Projects</li>
+            <li class="go-to nav-about" href="#">About</li>
+            <li class="go-to nav-contact" href="#">Contact</li>
         </div>
         <div class="hamburger" onclick="hamburgerX(this)">
             <div class="bar1"></div>
@@ -22,11 +22,11 @@
             <div class="bar3"></div>
         </div>
     </nav>
-    <header class="header">
+    <header class="header" id="Home">
         <h1>Amy Knudson</h1>
         <h2>Software Engineer</h2>
     </header>
-    <section class="skills">
+    <section id="Skills">
         <h2>Skills</h2>
         <ul>
             <li>JavaScript</li>
@@ -36,7 +36,7 @@
             <li>NodeJS</li>
         </ul>
     </section>
-    <section class="projects">
+    <section id="Projects">
         <h2>Projects</h2>
         <div>
             <div>
@@ -45,10 +45,14 @@
                 <a href="https://cat-chase.herokuapp.com" target="blank">Live Site</a>
                 <a href="https://github.com/react-game/react-game" target="blank">See the code on Github</a>
             </div>
-            <video src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" ></video>
+            <video src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" autoplay controls></video>
         </div>
     </section>
-    <section class="contact">
+    <section id="About">
+        <h2>About Me Junk</h2>
+        <p>Blah blah blah about me stuff</p>
+    </section>
+    <section id="Contact">
         <h2>Contact</h2>
         <a href="https://www.linkedin.com/in/amy-knudson/">LinkedIn</a>
         <a href="https://github.com/aknud">Github</a>

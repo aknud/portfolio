@@ -9,7 +9,9 @@
 nav {
     display: flex;
     justify-content: flex-end;
-    background-color: #020104;
+    position: fixed;
+    right: 0;
+    width: 100%;
 }
 
 /* ----- Hamburger Menu -----*/
@@ -17,7 +19,7 @@ nav {
     display: inline-block;
     cursor: pointer;
     padding: 10px;
-    position: absolute;
+    /* position: absolute; */
 }
     
 .bar1, .bar2, .bar3 {
@@ -50,25 +52,32 @@ nav {
 .drop-down {
   display: none;
   justify-content: flex-start;
-  
+  list-style-type: none;
+  padding-top: 55px;
 }
 
 .show {
     display: flex;
     flex-direction: column;
-    background-color: #0201044a;
+    background-color: #0201040f;
     height: max-content;
     width: 100%;
     position: absolute;
 }
 
 
-.drop-down > a {
-    margin: auto;
+.drop-down > li {
+    margin: 0 10px;
     padding: 3px;
     text-decoration: none;
     color: deeppink;
     letter-spacing: 1.3px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.drop-down > li:hover {
+    cursor: pointer;
 }
 
 .header {
