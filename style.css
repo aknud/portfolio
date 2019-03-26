@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Look up scroll to */
-
 nav {
     display: flex;
     justify-content: flex-end;
@@ -19,7 +17,6 @@ nav {
     display: inline-block;
     cursor: pointer;
     padding: 10px;
-    /* position: absolute; */
 }
     
 .bar1, .bar2, .bar3 {
