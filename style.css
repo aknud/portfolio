@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #060608e8;
+    color: deeppink;
+    font-family: 'Noto Sans SC', sans-serif;
+}
 
 nav {
     display: flex;
@@ -56,7 +61,7 @@ nav {
 .show {
     display: flex;
     flex-direction: column;
-    background-color: #0201040f;
+    background-color: #1d1d1fd6;
     height: max-content;
     width: 100%;
     position: absolute;
@@ -81,14 +86,13 @@ nav {
     background-image: url("https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
     background-position: 35%;
     background-size: cover;
-    color: #fff;
+    color: #fefefe;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-shadow: -4px -4px 20px deeppink;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header > h1 {
@@ -97,7 +101,66 @@ nav {
 .header > h2 {
     font-size: 1.7em;
 }
+
+
+
+/* main sections */
+section {
+    padding: 0 15px;
+    margin: 50px 10px;
+}
+section > h2 {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+/* --------------- */
+p, a {
+    color: #fefefe;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	align-items: center;
+    align-content: space-around;
+    list-style: none;
+    padding: 0 15px;
+}
+.skills-list > li {
+    padding:10px;
+    color: #fefefe
+}
+ .email:hover, a:hover, .skills-list > li:hover{
+    color: #7DE600;
+    font-size: 18px;
+}
+
+.project-details {
+    margin: 20px 0;
+}
+.project-details h3 {
+    color: deeppink;
+    padding: 20px 0;
+}
+.project-details > p, a {
+    padding-bottom: 20px;
+} 
+
+
 video {
     height: 300px;
-    width: 300px;
+    width: 270px;
+    border: 1px solid #083D77;
+}
+
+/* Contact */
+.contact-details {
+    text-align: center;
+    margin: 10px;
+}
+
+.contact-details > a, .email  {
+    margin: 0 15px;
+    display: inline-block;
 }
