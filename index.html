@@ -6,104 +6,122 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <title>Amy Knudson</title>
 </head>
 <body>
-    <nav>
-        <div class="drop-down">
+    <nav role="navigation">
+        <ul class="drop-down">
             <li class="go-to nav-home">Home</li>
             <li class="go-to nav-skills">Skills</li>
             <li class="go-to nav-projects">Projects</li>
             <li class="go-to nav-about">About</li>
             <li class="go-to nav-contact">Contact</li>
-        </div>
+        </ul>
         <div class="hamburger" onclick="hamburgerX(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
     </nav>
-    <header class="header" id="Home">
+    <header class="header" id="Home" role="banner">
         <h1>Amy Knudson</h1>
         <h2>Web Developer</h2>
     </header>
-    <section id="Skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>ReactJS</li>
-            <li>Redux</li>
-            <li>NodeJS</li>
-            <li>PostgreSQL</li>
-            <li>Mongoose</li>
-            <li>MongoDB</li>
-        </ul>
-    </section>
-    <section id="Projects">
-        <h2>Projects</h2>
-        <div>
-            <div class="project-details">
-                <h3>Cat-Chase</h3>
-                <p>A brief description about cat-chase.</p>
-                <a href="https://cat-chase.herokuapp.com" target="blank">Live Site</a>
-                <a href="https://github.com/react-game/react-game" target="blank">See the code on Github</a>
+    <main role="main">
+        <section id="Skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>ReactJS</li>
+                <li>Redux</li>
+                <li>NodeJS</li>
+                <li>PostgreSQL</li>
+                <li>Mongoose</li>
+                <li>MongoDB</li>
+            </ul>
+        </section>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <div>
+                <div class="project-details">
+                    <h3>Cat-Chase</h3>
+                    <p>2D collision detection game. Move the cat to eat the fish with the arrow or awsd keys and avoid the dog chasing you. This was a collaboration project with <span><a href="http://lara-potjewyd.surge.sh" target="blank">Lara Potjewyd</a></span> and <span><a href="https://www.linkedin.com/in/the-real-jessie-jones/" target="blank">Jessie Jones</a></span>.</p>
+                    <p>Technologies & Frameworks: <br> React | JavaScript | Node | Express | Mongoose | MongoDB | Heroku </p>
+                    <a href="https://cat-chase.herokuapp.com" target="blank">Live Site</a>
+                    <a href="https://github.com/react-game/react-game" target="blank">See the code on Github</a>
+                </div>
+                <div class="media-container">
+                    <video controls>
+                        <source src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" type="video/mp4">
+                    </video>
+                </div>
+            <div>
+                <div class="project-details">
+                    <h3>Book 2 Shelf</h3>
+                    <p>Browse a selection of books, and add them to your virtual shelf. You can sort books by availability and genre.</p>
+                    <p>Technologies & Frameworks: <br> React | Redux | Sass | Node | Express | Massive | PostgreSQL </p>
+                    <a href="https://book2shelf.com/" target="blank">Live Site</a>
+                    <a href="https://github.com/aknud/library-clone" target="blank">See the code on Github</a>
+                </div>
+                <div class="media-container">
+                    <!-- <video controls>
+                        <source src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" type="video/mp4">
+                    </video> -->
+                    <picture>
+                        <img src="./assets/b2s-landing.png" alt="">
+                    </picture>
+                </div>
             </div>
             <div>
-                <video src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" autoplay controls></video>
-            </div>
-        <div>
-            <div class="project-details">
-                <h3>Book 2 Shelf</h3>
-                <p>A brief description about Book 2 Shelf.</p>
-                <a href="https://book2shelf.com/" target="blank">Live Site</a>
-                <a href="https://github.com/aknud/library-clone" target="blank">See the code on Github</a>
-            </div>
-            <div>
-                <video src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" autoplay controls></video>
-            </div>
-        </div>
-        <div>
-            <div class="project-details">
-                <h3>Typing-Trainer</h3>
-                <p>A brief description about Typing Trainer.</p>
-                <a href="https://typing-trainer.com/" target="blank">Live Site</a>
-                <a href="https://github.com/aknud/type-trainer" target="blank">See the code on Github</a>
+                <div class="project-details">
+                    <h3>Typing-Trainer</h3>
+                    <p>Hone your typing skills with this typing application. Made with developers in mind, Typing Trainer lets you choose between HTML, CSS, JavaScript, or a random string of difficult characters to improve your accuracy and speed. A collaborative project with <span><a href="https://www.linkedin.com/in/j-tyler-ray/">J. Tyler Ray</a></span>, <span><a href="https://www.linkedin.com/in/jason-begay-31921145/">Jason Begay</a></span>, <span><a href="https://www.linkedin.com/in/antiadp/">Damien Anita</a></span>, and <span><a href="https://www.linkedin.com/in/russellmemory/">Russell Memory</a></span> </p>
+                    <a href="https://typing-trainer.com/" target="blank">Live Site</a>
+                    <a href="https://github.com/aknud/type-trainer" target="blank">See the code on Github</a>
+                </div>
+                <div class="media-container">
+                    <video controls>
+                        <source src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <div>
-                <video src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" autoplay controls></video>
+                <div class="project-details">
+                    <h3>Local Stay</h3>
+                    <p>A brief description about Local Stay.</p>
+                    <a href="https://localstay.us/" target="blank">Live Site</a>
+                    <a href="https://github.com/aknud/personal-project-airbnb-clone" target="blank">See the code on Github</a>
+                </div>
+                <div class="media-container">
+                    <video controls>
+                        <source src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-        </div>
-        <div>
-            <div class="project-details">
-                <h3>Local Stay</h3>
-                <p>A brief description about Local Stay.</p>
-                <a href="https://localstay.us/" target="blank">Live Site</a>
-                <a href="https://github.com/aknud/personal-project-airbnb-clone" target="blank">See the code on Github</a>
+        </section>
+        <section id="About">
+            <h2>About Me Junk</h2>
+            <div>
+                <p>These are things I am passionate about and want to learn.</p>
+                <ul class="ambitions">
+                    <li>Accessibility</li>
+                    <li>Opensource</li>
+                    <li>Projects for social good</li>
+                </ul>
             </div>
-            <video src="./assets/Screen Recording 2019-03-23 at 22.53.37_37.mp4" autoplay controls></video>
-        </div>
-    </section>
-    <section id="About">
-        <h2>About Me Junk</h2>
-        <div>
-            <p>Blah blah blah about me stuff</p>
-        </div>
-    </section>
-    <section id="Contact">
-        <h2>Contact</h2>
-        <div class="contact-details">
-            <a href="https://www.linkedin.com/in/amy-knudson/">LinkedIn</a>
-            <a href="https://github.com/aknud">Github</a>
-            <p class="email">Email: <span>amylknudson@gmail.com</span></p>
-        </div>
-    </section>
+        </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <a href="https://www.linkedin.com/in/amy-knudson/">LinkedIn</a>
+                <a href="https://github.com/aknud">Github</a>
+                <p class="email">Email: <span>amylknudson@gmail.com</span></p>
+            </div>
+        </section>
+    </main>
     <footer></footer>
     <script src="main.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 </body>
 </html>
