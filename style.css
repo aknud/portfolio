@@ -183,13 +183,14 @@ video, img {
 
 @media only screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-
+    video, img {
+        width: 500px;
+    }
 }
 
 
-/* 
+/*
  Colors
  #083D77
  #7DE600
