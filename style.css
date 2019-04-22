@@ -23,7 +23,7 @@ nav {
     cursor: pointer;
     padding: 10px;
 }
-    
+
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -31,24 +31,24 @@ nav {
     margin: 6px 0;
     transition: 0.4s;
 }
-    
+
 /* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-50deg) translate(-8px, 6px);
 }
-    
+
 /* Fade out the second bar */
 .change .bar2 {
     opacity: 0;
 }
-    
+
 /* Rotate last bar */
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
-  
+
 /*------------------------------*/
 
 .drop-down {
@@ -98,8 +98,11 @@ nav {
 .header > h1 {
     font-size: 2.2rem;
 }
-.header > h2 {
-    font-size: 1.5em;
+.typewrite {
+    font-size: 1.5rem;
+}
+.typewrite > .wrap {
+    border-right: 3px solid #7DE600;
 }
 
 
@@ -120,7 +123,9 @@ section > h2 {
 p, a, ul {
     color: #fefefe;
 }
-
+a {
+    text-decoration-color: #7DE600;
+}
 
 .skills-list {
     display: flex;
@@ -134,7 +139,10 @@ p, a, ul {
     padding:10px 4px;
     color: #fefefe
 }
- .email:hover, a:hover, .skills-list > li:hover{
+.email, a, .skills-list > li {
+    transition: font-size 1s;
+}
+.email:hover, a:hover, .skills-list > li:hover {
     color: #7DE600;
     font-size: 18px;
 }
@@ -148,7 +156,7 @@ p, a, ul {
 }
 .project-details > p, a {
     padding-bottom: 20px;
-} 
+}
 
 
 .media-container {
@@ -181,8 +189,8 @@ video, img {
 
 
 
-@media only screen 
-  and (min-device-width: 768px) 
+@media only screen
+  and (min-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 1) {
     video, img {
         width: 500px;
