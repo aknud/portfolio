@@ -3,7 +3,9 @@ let burger = document.getElementsByClassName("hamburger")[0];
 
 function scrollTo(e){
     let page = document.getElementById(e.toElement.innerText);
-    hamburgerX(burger);
+    if(window.innerWidth < 768){
+        hamburgerX(burger);
+    }
     page.scrollIntoView();
 }
 
@@ -75,3 +77,14 @@ window.onload = function(){
         }
     }
 };
+
+
+// Change color of navbar on scroll
+window.onscroll = () => {
+    const nav = document.getElementsByTagName("nav")[0]
+    if(this.scrollY <= 959 ){
+        console.log("heynow")
+        nav.className = ""
+    }
+    else nav.className = "colorChange"
+}
