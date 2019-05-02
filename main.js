@@ -2,11 +2,12 @@ let dropDown = document.getElementsByClassName("drop-down")[0];
 let burger = document.getElementsByClassName("hamburger")[0];
 
 function scrollTo(e){
-    let page = document.getElementById(e.toElement.innerText);
+    let page = document.getElementById
+    (e.toElement.innerText);
     if(window.innerWidth < 768){
         hamburgerX(burger);
     }
-    page.scrollIntoView();
+    page.scrollIntoView({behavior: "smooth"});
 }
 
 function hamburgerX(x) {
@@ -82,8 +83,8 @@ window.onload = function(){
 // Change color of navbar on scroll
 window.onscroll = () => {
     const nav = document.getElementsByTagName("nav")[0]
-    if(this.scrollY <= 959 ){
-        console.log("heynow")
+    const main = document.getElementsByTagName("main")[0]
+    if(this.scrollY <= main.offsetTop - (nav.offsetHeight + 20)){
         nav.className = ""
     }
     else nav.className = "colorChange"

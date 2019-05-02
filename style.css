@@ -15,6 +15,7 @@ nav {
     position: fixed;
     right: 0;
     width: 100%;
+    z-index: 1;
 }
 
 /* ----- Hamburger Menu -----*/
@@ -96,10 +97,10 @@ nav {
 }
 
 .header > h1 {
-    font-size: 2.2rem;
+    font-size: 2.2em;
 }
 .typewrite {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 .typewrite > .wrap {
     border-right: 3px solid #7DE600;
@@ -190,7 +191,7 @@ video, img {
 
 
 
-
+/* iPad */
 @media only screen
   and (min-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 1) {
@@ -209,11 +210,21 @@ video, img {
         display: none;
     }
     .go-to {
-        font-size: 24px
+        font-size: 1em;
+    }
+    section > h2 {
+        margin-top: 20px;
     }
     video, img {
         width: 500px;
     }
+}
+
+@media screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1023px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
 }
 
 
