@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Amy Knudson</title>
@@ -15,7 +16,7 @@
             <li class="go-to nav-home">Home</li>
             <li class="go-to nav-skills">Skills</li>
             <li class="go-to nav-projects">Projects</li>
-            <li class="go-to nav-about">About</li>
+            <!-- <li class="go-to nav-about">About</li> -->
             <li class="go-to nav-contact">Contact</li>
         </ul>
         <div class="hamburger" onclick="hamburgerX(this)">
@@ -90,10 +91,10 @@
             <div>
                 <div class="project-details">
                     <h3>Typing-Trainer</h3>
-                    <p>Hone your typing skills with this typing application. Made with developers in mind, Typing Trainer lets you choose between HTML, CSS, JavaScript, or a random string of difficult characters to improve your accuracy and speed. A collaborative project with 
-                        <span><a target="blank" href="https://www.linkedin.com/in/j-tyler-ray/">J. Tyler Ray</a></span>, 
-                        <span><a target="blank" href="https://www.linkedin.com/in/jason-begay-31921145/">Jason Begay</a></span>, 
-                        <span><a target="blank" href="https://www.linkedin.com/in/antiadp/">Damien Anita</a></span>, and 
+                    <p>Hone your typing skills with this typing application. Made with developers in mind, Typing Trainer lets you choose between HTML, CSS, JavaScript, or a random string of difficult characters to improve your accuracy and speed. A collaborative project with
+                        <span><a target="blank" href="https://www.linkedin.com/in/j-tyler-ray/">J. Tyler Ray</a></span>,
+                        <span><a target="blank" href="https://www.linkedin.com/in/jason-begay-31921145/">Jason Begay</a></span>,
+                        <span><a target="blank" href="https://www.linkedin.com/in/antiadp/">Damien Anita</a></span>, and
                         <span><a target="blank" href="https://www.linkedin.com/in/russellmemory/">Russell Memory</a></span> </p>
                     <p>Technologies & Frameworks: <br> React | Redux | Node | Express | Massive | PostgreSQL </p>
                     <a href="https://typing-trainer.com/" target="blank">Live Site</a>
@@ -105,6 +106,7 @@
                     </video>
                 </div>
             </div>
+            <!-- This is my first project. It... needs a lot of love and work still. -->
             <!-- <div>
                 <div class="project-details">
                     <h3>Local Stay</h3>
@@ -119,8 +121,15 @@
                 </div>
             </div> -->
         </section>
-        <section id="About">
+        <!-- <section id="About">
             <h2>About Me</h2>
+            <div>
+                <p>Besides building rad web applications, I also enjoy  <br> <b>Travelling the world.</b>  I love the excitement of going somewhere new. I like talking to strangers and seeing the unfamiliar. <br>
+                Food. I am the scavenger of all snacks. If you need something from me, ask me with food. It's why I get up in the morning.
+
+                 '[ "Web Developer", "Enthusiastic Learner", "Wandering Adventurer", "Foodie", "Inclusive", "Adaptive" ]'
+            </p>
+            </div>
             <div>
                 <p>These are things I'm excited about && want to learn.</p>
                 <ul class="ambitions">
@@ -129,13 +138,16 @@
                     <li>Projects for social good</li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <section id="Contact">
             <h2>Contact</h2>
             <div class="contact-details">
-                <a href="https://www.linkedin.com/in/amy-knudson/">LinkedIn</a>
-                <a href="https://github.com/aknud">Github</a>
-                <p class="email">Email: <span>amylknudson@gmail.com</span></p>
+                <a href="https://www.linkedin.com/in/amy-knudson/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/aknud"><i class="fab fa-github-square"></i></a>
+                <a href="mailto:amylknudson@gmail.com?Subject=Let's%20talk" target="blank"><i class="far fa-envelope"></i></a>
+                <!-- <p class="email">Email: <span>amylknudson@gmail.com</span></p> -->
             </div>
         </section>
     </main>

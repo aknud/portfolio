@@ -181,15 +181,22 @@ video, img {
 /* Contact */
 .contact-details {
     text-align: center;
-    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.svg-inline--fa {
+    font-size: 32px;
+}
+i {
+    text-shadow: 2px 2px 5px deeppink;
 }
 
-.contact-details > a, .email  {
-    margin: 0 20px;
-    display: inline-block;
+@media only screen and (min-device-width: 375px){
+    video, img {
+        width: 250px;
+    }
 }
-
-
 
 /* iPad */
 @media only screen
