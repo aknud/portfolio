@@ -3,7 +3,7 @@ let burger = document.getElementsByClassName("hamburger")[0];
 
 function scrollTo(e){
     let page = document.getElementById
-    (e.toElement.innerText);
+    (e.target.innerText);
     if(window.innerWidth < 768){
         hamburgerX(burger);
     }
@@ -19,6 +19,7 @@ function hamburgerX(x) {
 let navLinks = document.querySelectorAll(".go-to");
 
 navLinks.forEach(element => {
+    element.addEventListener("keypress", scrollTo)
     element.addEventListener("click", scrollTo)
 });
 
