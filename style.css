@@ -246,8 +246,15 @@ video, img {
     a:focus {
         outline-color: deeppink;
     }
+    #Skills {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .skills-list > li {
         padding: 10px;
+        font-size: 18px;
     }
     .project-details > a {
         padding: 0 10px 20px 0;
@@ -255,11 +262,75 @@ video, img {
     video, img {
         margin: 20px;
     }
+    #Contact {
+        height: 50vh;
+    }
     .contact-details {
         justify-content: center;
+        height: 50%;
     }
     .contact-details a {
         padding: 20px;
+    }
+}
+
+@media screen and (min-device-width: 1280px){
+    p, a {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    }
+    .header > h1 {
+        font-size: 74px;
+    }
+    .typewrite {
+        font-size: 40px;
+    }
+    .header > h1, .typewrite, .project-details > h3, section > h2 {
+        letter-spacing: 2.5px;
+    }
+    main {
+        width: 90vw;
+    }
+    section > h2 {
+        font-size: 38px;
+    }
+    #Skills {
+        height: 60vh;
+        justify-content: space-around;
+    }
+    .skills-list > li, .go-to {
+        font-size: 28px;
+        letter-spacing: 1.5px;
+    }
+    .skills-list > li {
+        padding: 20px;
+    }
+    .project {
+        display: flex;
+        align-items: center;
+        margin: 10% 0;
+    }
+    .project-details {
+        margin: 20px;
+    }
+    .project:nth-child(2n+1){
+        flex-direction: row-reverse
+    }
+    .project-details > h3 {
+        padding: 0 0 10px 0;
+        font-size: 24px;
+    }
+    .svg-inline--fa {
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-device-width: 1440px){
+    main {
+        width: 80vw;
+    }
+    .go-to {
+        font-size: 24px;
     }
 }
 

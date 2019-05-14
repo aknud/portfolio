@@ -85,7 +85,7 @@ window.onload = function(){
 window.onscroll = () => {
     const nav = document.getElementsByTagName("nav")[0]
     const main = document.getElementsByTagName("main")[0]
-    if(this.scrollY <= main.offsetTop - (nav.offsetHeight + 20)){
+    if(this.scrollY <= main.offsetTop - nav.offsetHeight){
         nav.className = ""
     }
     else nav.className = "colorChange"
