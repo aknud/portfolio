@@ -126,7 +126,7 @@ section > h2 {
 p, a, ul {
     color: #fefefe;
 }
-a {
+a, .contact-details > a {
     text-decoration-color: #7DE600;
 }
 
@@ -142,13 +142,13 @@ a {
     padding:10px 4px;
     color: #fefefe
 }
-a, .skills-list > li {
+.contact-item, .skills-list > li {
     transition: transform 1s;
 }
-a:hover, .skills-list > li:hover {
+.contact-item:hover, .skills-list > li:hover {
     color: #7DE600;
     transform: scale(1.18);
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .project-details {
